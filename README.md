@@ -1,6 +1,6 @@
 <h1> Upgrade UI to Dynamic Using Service API </h1>
 
-<h3> I implemented this dynamic approach for two applications (multiplication table and palindrome)
+<h3> I implemented this dynamic approach for two operations (multiplication table and palindrome)
 
 * UI application 
 ```URL 
