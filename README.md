@@ -2,20 +2,20 @@
 
 <h3> I implemented this dynamic approach for two applications (multiplication table and palindrome)
 
-<p> UI application </p>
+* UI application 
 ```URL 
 http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com
 ```
 
 
-<p> Multiplication Table </p>
+* Multiplication Table 
 ```URL
 http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com
 ```
 
-<p> Palindrome or not </p>
+* Palindrome or not
 ```URL 
 http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com
 ```
 
-<h3> when the input is given in UI application, whether to get multiplication table or palindrome. It will not redirected to the other page instead the URL remains unchanged. </h3>
+<p> when the input is given in UI application, whether to get multiplication table or palindrome. It will not redirected to the other page instead the URL remains unchanged. </p>
