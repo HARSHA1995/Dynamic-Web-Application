@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Multiplication Algorithm</title>
+<style>
+span
+{
+    display:inline-block;
+    position:relative;
+    float:none;
+    margin-left:550px;
+}
+
+button
+{
+    border: none;
+    padding: 15px;
+    background: #4479BA;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 570px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form id="table" action="program.php" method="get">
+    <p style = " color:blue; text-align:center; font-size:20px"><strong> ENTER THE NUMBER</strong></p>
+    <span ><input type="number" id="x" name="x"  style="width:130px; height:40px"></span>
+    <br>
+    <br>
+    <br>
+<button type="submit" value="Get a table">Get a table </button>
+</form>
+
+
+
+
+<form id="palindrome" action="program1.php" method="get">
+    <p style = " color:blue; text-align:center; font-size:20px"><strong> ENTER THE NUMBER</strong></p>
+    <span ><input type="number" id="y" name="y"  style="width:130px; height:40px"></span>
+    <br>
+    <br>
+    <br>
+<button type="submit" value="Palindrome or not">Palindrome or not </button>
+</form>
+
+
+
+<form id="prime" action="is_prime.php" method="get">
+    <p style = " color:blue; text-align:center; font-size:20px"><strong> ENTER THE NUMBER</strong></p>
+    <span ><input type="number" id="x" name="x"  style="width:130px; height:40px"></span>
+    <br>
+    <br>
+    <br>
+<button type="submit" value="prime or not">prime or not </button>
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+$( '#table' ) .submit( function( e ){
+e.preventDefault();
+var ur = 'http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com/program.php';
+var x = document.getElementById("x").value;
+$.ajax({
+url: ur,
+type: 'GET',
+dataType : "json",
+data: "x=" + x,
+processData: false,
+contentType: false,
+success: function(msg){
+
+console.log(msg);
+$("body").html('<html><h1 style="color:black">The result is <br>'+msg.result +' </h1></html>');
+}
+
+});
+});
+});
+</script>
+
+
+<script type='text/javascript'>
+$(document).ready(function(){
+$( '#palindrome' ) .submit( function( e ){
+e.preventDefault();
+var ur = 'http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com/program1.php';
+var y = document.getElementById("y").value;
+$.ajax({
+url: ur,
+type: 'GET',
+dataType : "json",
+data: "x=" + y,
+processData: false,
+contentType: false,
+success: function(msg){
+
+console.log(msg);
+$("body").html('<html><h1 style="color:black">The result is '+msg.result +' </h1></html>');
+}
+
+});
+});
+});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
