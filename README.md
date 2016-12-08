@@ -18,4 +18,4 @@ http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com
 http://ec2-54-218-80-37.us-west-2.compute.amazonaws.com
 ```
 
-<p> when the input is given in UI application, whether to get multiplication table or palindrome. It will not redirected to the other page instead the URL remains unchanged. </p>
+<p> when the input is given in the UI application, whether to get multiplication table or palindrome. It will not redirected to the other page instead the URL remains unchanged. </p>
